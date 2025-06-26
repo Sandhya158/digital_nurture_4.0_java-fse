@@ -1,0 +1,14 @@
+
+Before running the queries we need to create and insert the values in a table :
+
+CREATE TABLE Accounts (
+    AccountID   NUMBER PRIMARY KEY,
+    CustomerID  NUMBER,
+    Balance     NUMBER(10,2)
+);
+
+
+INSERT INTO Accounts VALUES (1001, 101, 15000);
+INSERT INTO Accounts VALUES (1002, 101, 5000);
+INSERT INTO Accounts VALUES (1003, 102, 8000);
+

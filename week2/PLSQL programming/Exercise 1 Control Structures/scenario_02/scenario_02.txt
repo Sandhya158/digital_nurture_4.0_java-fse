@@ -1,0 +1,16 @@
+DECLARE
+    CURSOR vip_cursor IS
+        SELECT CustomerID, Balance
+        FROM Customers;
+
+BEGIN
+    FOR vip_rec IN vip_cursor LOOP
+        IF vip_rec.Balance > 10000 THEN
+            UPDATE Customers
+            SET IsVIP = 'TRUE'
+            WHERE CustomerID = vip_rec.CustomerID;
+
+            DBMS_OUTPUT.PUT_LINE('VIP status granted to Customer ID: ' || vip_rec.CustomerID);
+        END IF;
+    END LOOP;
+END;

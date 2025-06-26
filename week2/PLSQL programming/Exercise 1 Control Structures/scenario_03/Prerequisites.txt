@@ -1,0 +1,18 @@
+
+Before running the queries we need to create and insert the values in a table :
+
+CREATE TABLE Customers (
+    CustomerID   NUMBER,
+    Name         VARCHAR2(100),
+    Age          NUMBER,
+    Balance      NUMBER,
+    InterestRate NUMBER(5,2),
+    IsVIP        VARCHAR2(5)
+);
+
+
+
+INSERT INTO Customers VALUES (201, 'Amit', 45, 12000, 10.5, 'FALSE');
+INSERT INTO Customers VALUES (202, 'John', 32, 8000, 11.0, 'FALSE');
+INSERT INTO Customers VALUES (203, 'Rahul', 60, 15000, 9.5, 'FALSE');
+

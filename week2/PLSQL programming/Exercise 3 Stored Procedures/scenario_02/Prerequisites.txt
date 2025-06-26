@@ -1,0 +1,19 @@
+
+Before running the queries we need to create and insert the values in a table :
+
+CREATE TABLE Employees (
+    EmpID         NUMBER PRIMARY KEY,
+    Name          VARCHAR2(100),
+    Department    VARCHAR2(50),
+    Salary        NUMBER(10,2)
+);
+
+
+
+
+INSERT INTO Employees VALUES (1, 'Amit', 'HR', 30000);
+INSERT INTO Employees VALUES (2, 'Sneha', 'IT', 45000);
+INSERT INTO Employees VALUES (3, 'Ravi', 'IT', 50000);
+INSERT INTO Employees VALUES (4, 'Priya', 'Sales', 35000);
+
+
