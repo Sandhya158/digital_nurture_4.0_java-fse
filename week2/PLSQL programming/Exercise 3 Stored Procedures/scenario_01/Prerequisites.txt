@@ -1,0 +1,15 @@
+
+Before running the queries we need to create and insert the values in a table :
+
+CREATE TABLE SavingsAccounts (
+    AccountID    NUMBER PRIMARY KEY,
+    CustomerID   NUMBER,
+    Balance      NUMBER(10,2),
+    AccountType  VARCHAR2(20)
+);
+
+
+INSERT INTO SavingsAccounts VALUES (1001, 101, 10000, 'Savings');
+INSERT INTO SavingsAccounts VALUES (1002, 102, 20000, 'Savings');
+INSERT INTO SavingsAccounts VALUES (1003, 103, 15000, 'Current'); 
+
